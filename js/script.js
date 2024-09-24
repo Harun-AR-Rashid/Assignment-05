@@ -30,10 +30,6 @@ document.getElementById('donate-for-noakhali').addEventListener('click', functio
         alert('You do not have sufficient donation balance!');
         return;
     }
-    else {
-        alert('You have donated ' + inputAmount);
-    }
-
     const amountForNoakhali = elementFunction('current-noakhali-amount');
     const updateNoakhaliBalance = inputAmount + amountForNoakhali;
     document.getElementById('current-noakhali-amount').innerText = updateNoakhaliBalance;
@@ -48,7 +44,6 @@ document.getElementById('donate-for-noakhali').addEventListener('click', functio
     <p class='text-amber-700'>${new Date().toDateString()} ${new Date().toTimeString()}</p>
     `;
     sharedCommonFunction('transaction-container').appendChild(transactionHistory);
-
 });
 // Donate for Flood at Noakhali, Bangladesh javascript ends here
 
@@ -65,9 +60,6 @@ document.getElementById('donate-for-feni').addEventListener('click', function ()
         alert('You do not have sufficient donation balance!');
         return;
     }
-    else {
-        alert('You have donated ' + inputAmount);
-    }
     const amountForNoakhali = elementFunction('current-feni-amount');
     const updateNoakhaliBalance = inputAmount + amountForNoakhali;
     document.getElementById('current-feni-amount').innerText = updateNoakhaliBalance;
@@ -82,8 +74,6 @@ document.getElementById('donate-for-feni').addEventListener('click', function ()
     <p class='text-violet-500'>${new Date().toDateString()} ${new Date().toTimeString()}</p>
     `;
     sharedCommonFunction('transaction-container').appendChild(transactionHistory);
-
-
 });
 // Donate for Flood Relief in Feni,Bangladesh javascript starts here
 // Aid for Injured in the Quota Movement javascript starts here
@@ -97,9 +87,6 @@ document.getElementById('donate-for-quota-movement').addEventListener('click', f
     if (inputAmount > totalAmount) {
         alert('You do not have sufficient donation balance!');
         return;
-    }
-    else {
-        alert('You have donated ' + inputAmount);
     }
     const amountForNoakhali = elementFunction('current-quota-movement-amount');
     const updateNoakhaliBalance = inputAmount + amountForNoakhali;
@@ -115,8 +102,6 @@ document.getElementById('donate-for-quota-movement').addEventListener('click', f
     <p class = 'text-red-500'>${new Date().toDateString()} ${new Date().toTimeString()}</p>
     `;
     sharedCommonFunction('transaction-container').appendChild(transactionHistory);
-
-
 });
 // History button handler added
 const historyTab = sharedCommonFunction('history-btn');

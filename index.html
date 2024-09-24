@@ -59,7 +59,8 @@
               <input id="input-for-noakhali"
                 class="w-full h-14 border-2 pl-4 rounded-lg mb-4 outline-none border-stone-300" type="text"
                 placeholder="Write Donation Amount">
-              <button id="donate-for-noakhali" class="rounded-lg w-full h-14 p-4 font-bold text-xl bg-lime-400">Donate
+              <button id="donate-for-noakhali" onclick="my_modal_1.showModal()"
+                class="rounded-lg w-full h-14 p-4 font-bold text-xl bg-lime-400">Donate
                 Now</button>
             </div>
           </div>
@@ -88,7 +89,8 @@
             <div>
               <input id="input-for-feni" class="w-full h-14 border-2 pl-4 rounded-lg mb-4 outline-none border-stone-300"
                 type="text" placeholder="Write Donation Amount">
-              <button id="donate-for-feni" class="rounded-lg w-full h-14 p-4 font-bold text-xl bg-lime-400">Donate
+              <button id="donate-for-feni" onclick="my_modal_1.showModal()"
+                class="rounded-lg w-full h-14 p-4 font-bold text-xl bg-lime-400">Donate
                 Now</button>
             </div>
           </div>
@@ -119,7 +121,7 @@
               <input id="input-for-quota-movement"
                 class="w-full h-14 border-2 pl-4 rounded-lg mb-4 outline-none border-stone-300" type="text"
                 placeholder="Write Donation Amount">
-              <button id="donate-for-quota-movement"
+              <button id="donate-for-quota-movement" onclick="my_modal_1.showModal()"
                 class="rounded-lg w-full h-14 p-4 font-bold text-xl bg-lime-400">Donate Now</button>
             </div>
           </div>
@@ -127,10 +129,26 @@
       </div>
     </section>
     <!-- Quota Movement section ends here -->
+    <!-- modal parts here -->
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box flex justify-center items-center flex-col">
+        <h3 class="text-3xl font-bold">Congrates!</h3>
+        <img class="mt-4 size-12" src="assets/coin.png" alt="">
+        <p class="py-4">You Have Donated for Humankind</p>
+        <h3 class="font-bold text-xl ">Successful</h3>
+        <div class="modal-action flex justify-center items-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn font-bold">close confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   </main>
   <!-- History section added here -->
   <section id="transaction-for-donation" class="container hidden ">
-    <h1 class="text-3xl font-bold mb-5 sticky top-52 z-10  text-center md:text-start">Your <span class="text-purple-500">Trans</span><span class="text-rose-500">action</span> History :</h1>
+    <h1 class="text-3xl font-bold mb-5 sticky top-52 z-10  text-center md:text-start">Your <span
+        class="text-purple-500">Trans</span><span class="text-rose-500">action</span> History :</h1>
     <div id="transaction-container">
 
     </div>
