@@ -1,23 +1,24 @@
 // donation functionality here
-// common function 
+// First-common-function 
 function commonFunction(id) {
     const inputfield = document.getElementById(id).value;
     const inputfieldNumber = parseFloat(inputfield);
     return inputfieldNumber;
-
 };
 
+// Second common function
 function elementFunction(id) {
     const inputelement = document.getElementById(id).innerText;
     const inputelementNumber = parseFloat(inputelement);
     return inputelementNumber;
 };
+// Third common cunction
 function sharedCommonFunction(id) {
     const oneInAll = document.getElementById(id);
     return oneInAll;
 }
 
-// Website's  Activity starts from here 
+// Website's  Activity starts here 
 // Donate for Flood at Noakhali, Bangladesh javascript starts here
 document.getElementById('donate-for-noakhali').addEventListener('click', function () {
     const inputAmount = commonFunction('input-for-noakhali');
